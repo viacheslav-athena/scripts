@@ -12,6 +12,8 @@ For some time, I installed libraries for my embedded systems manually from the c
 
 
 ```
+git clone https://github.com/popikeyshen/scripts
+cd scripts
 sudo bash ./install.sh
 ```
 
