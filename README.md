@@ -15,6 +15,6 @@ For some time, I installed libraries for my embedded systems manually from the c
 sudo bash ./install.sh
 ```
 
-## Authors
+### Authors
 
 Viacheslav Popika
