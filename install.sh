@@ -16,6 +16,8 @@ cd ~/opencv
 mkdir build
 cd build
 # add -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules for contrib
+# as example:
+# sudo cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/home/popikeyshen/Lib/opencv_contrib .. make -j7
 cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local .. make -j7
 sudo make install
 
