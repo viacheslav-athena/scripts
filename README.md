@@ -6,11 +6,11 @@ For some time, I installed libraries for my embedded systems manually from the c
 
 1. Script.sh
 
-a. Opencv
+  a. Opencv
 
-b. Dlib
+  b. Dlib
 
-c. Eigen
+  c. Eigen
 
 2. Caffe.sh
 
