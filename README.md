@@ -24,6 +24,10 @@ sudo bash ./install.sh
 sudo bash ./caffe.sh
 ```
 
+# Errors
+
+If you have errors - look comments in the install script.
+
 ### Authors
 
 Viacheslav Popika
