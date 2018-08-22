@@ -15,8 +15,8 @@ git clone https://github.com/opencv/opencv
 cd ~/opencv
 mkdir build
 cd build
-cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
-make -j7
+# add -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules for contrib
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local .. make -j7
 sudo make install
 
 ############################################################################
