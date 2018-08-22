@@ -5,8 +5,11 @@ For some time, I installed libraries for my embedded systems manually from the c
 ## List of packages
 
 1. Script.sh
+
    a) Opencv
+
    b) Dlib
+
    c) Eigen
 
 2. Caffe.sh
