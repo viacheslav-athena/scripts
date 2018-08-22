@@ -18,6 +18,16 @@ cd build
 # add -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules for contrib
 # as example:
 # sudo cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/home/popikeyshen/Lib/opencv_contrib/modules ..
+# for contrib need packages:
+# sudo apt-get install libgtk-3-dev
+# sudo apt-get install libgstreamer-plugins-base1.0-dev
+#sudo apt-get install libopenblas-dev
+#sudo apt-get install libatlas-base-dev
+# or you have errors
+# -- Could not find OpenBLAS lib. Turning OpenBLAS_FOUND off
+# -- Could NOT find Atlas
+# --   No package 'gtk+-3.0' found
+# --   No package 'gstreamer-video-1.0' found
 cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local .. 
 make -j7
 sudo make install
