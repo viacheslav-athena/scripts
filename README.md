@@ -26,7 +26,7 @@ sudo bash ./caffe.sh
 
 # Errors
 
-If you have errors - look comments in the install script. And dont for get to install the same versions of OpenCV and Contrib
+If you have errors - look comments in the install script. And dont forget to install the same versions of OpenCV and Contrib
 
 ### Authors
 
