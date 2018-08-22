@@ -56,4 +56,26 @@ cmake ..
 sudo make install
 
 
+# if you have errors
+#'gtk+-3.0'
+#sudo apt-get install libgtk-3-dev
 
+#sudo apt-get install libgstreamer-plugins-base1.0-dev
+#--   No package 'gstreamer-video-1.0' found
+
+#sudo apt-get install libopenblas-dev
+#sudo apt-get install libatlas-base-dev
+
+# Could not find OpenBLAS include. Turning OpenBLAS_FOUND off
+#-- Could not find OpenBLAS lib. Turning OpenBLAS_FOUND off
+#-- Could NOT find Atlas
+
+# could not find python libraries
+#sudo apt-get install python3-dev python3-pip python3-tk python3-lxml python3-six
+
+#numpy not found
+#sudo pip3 install numpy
+
+#  lapack openblas not found
+#sudo apt-get install liblapacke-dev
+#sudo ln -s /usr/include/lapacke.h /usr/include/openblas/
