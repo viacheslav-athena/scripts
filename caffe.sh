@@ -80,3 +80,10 @@ sudo pip install pydot --upgrade
 sudo apt-get install cython --upgrade
 
 sudo apt-get install graphviz
+
+cd python
+# you can import caffe from this folder or add path
+# export PYTHONPATH=/home/user/caffe/python
+# or in python add:
+# import sys
+# sys.path.append('/home/user/caffe/python')
