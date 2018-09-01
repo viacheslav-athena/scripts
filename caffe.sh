@@ -3,6 +3,7 @@
 # http://caffe.berkeleyvision.org/install_apt.html
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 sudo apt-get install --no-install-recommends libboost-all-dev
+sudo apt-get install python-pip
 
 sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
@@ -69,3 +70,13 @@ nano requirements.txt
 sudo apt install python-gflags
 sudo apt install python-protobuf
 
+#cannot import name fitpack
+sudo apt-get remove python-scipy
+sudo pip install scipy --upgrade   # use --upgrade flag!!! because apt-get install scipy get the old bersion
+
+sudo pip install six --upgrade
+sudo pip install Pillow --upgrade
+sudo pip install pydot --upgrade
+sudo apt-get install cython --upgrade
+
+sudo apt-get install graphviz
