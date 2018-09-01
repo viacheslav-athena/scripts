@@ -28,7 +28,7 @@ sudo bash ./caffe.sh
  You can import caffe from this folder or add path
  
 ```
-# export PYTHONPATH=/home/user/caffe/python
+export PYTHONPATH=/home/user/caffe/python
 
 ```
  or in python add:
