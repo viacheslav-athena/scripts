@@ -23,6 +23,21 @@ cd scripts
 sudo bash ./install.sh
 sudo bash ./caffe.sh
 ```
+### Path
+
+ You can import caffe from this folder or add path
+ 
+```
+# export PYTHONPATH=/home/user/caffe/python
+
+```
+ or in python add:
+ 
+```
+ import sys
+ sys.path.append('/home/user/caffe/python')
+
+```
 
 # Errors
 
