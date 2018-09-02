@@ -23,6 +23,15 @@ cd scripts
 sudo bash ./install.sh
 sudo bash ./caffe.sh
 ```
+If the caffe open file -> add following 
+```
+--- INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
++++ INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/
+```
+and 
+```
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
+```
 ### Path
 
  You can import caffe from this folder or add path
