@@ -51,6 +51,7 @@ export PYTHONPATH=/home/user/caffe/python
 ### Errors
 
 If you have errors - look comments in the install script. And dont forget to install the same versions of OpenCV and Contrib
+For 08.2018 caffe works with OpenCV version 3
 
 ### hashteg 
 caffe installation, caffe bash autoinstall
