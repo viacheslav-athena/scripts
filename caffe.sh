@@ -1,11 +1,11 @@
 #!bash
 
 # http://caffe.berkeleyvision.org/install_apt.html
-sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
-sudo apt-get install --no-install-recommends libboost-all-dev
-sudo apt-get install python-pip
+sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+sudo apt-get install -y --no-install-recommends libboost-all-dev
+sudo apt-get install -y python-pip
 
-sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
+sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 # dowlonad caffe from git
 cd
@@ -25,12 +25,12 @@ nano Makefile.config
 
 # Errors
 # 1) openblas not found https://github.com/BVLC/caffe/issues/3599
-sudo apt-get install libopenblas-dev
+sudo apt-get install -y libopenblas-dev
 # 2) hdf5 
-sudo apt-get install libhdf5-10
-sudo apt-get install libhdf5-serial-dev
-sudo apt-get install libhdf5-dev
-sudo apt-get install libhdf5-cpp-11
+sudo apt-get install -y libhdf5-10
+sudo apt-get install -y libhdf5-serial-dev
+sudo apt-get install -y libhdf5-dev
+sudo apt-get install -y libhdf5-cpp-11
 find /usr -iname "*hdf5.h*"
 #https://stackoverflow.com/questions/37007495/caffe-didnt-see-hdf5-h-when-compiling
 #/usr/include/hdf5/serial/hdf5.h
@@ -46,9 +46,9 @@ find /usr -iname "*hdf5.h*"
 
 # 4) /usr/bin/ld: cannot find -lcblas
 # https://github.com/BVLC/caffe/issues/559
-sudo apt-get install libatlas-base-dev
+sudo apt-get install -y libatlas-base-dev
 
-sudo pip install pandas
+sudo pip install -y pandas
 make clean
 make all
 make test
@@ -57,29 +57,29 @@ make runtest
 # Error
 # 5) python/caffe/_caffe.cpp:10:31: fatal error: numpy/arrayobject.h: No such file or directory
 sudo apt remove python-numpy
-sudo apt install python-numpy
+sudo apt install -y python-numpy
 
 make pycaffe
 make pytest
-sudo apt install python-scipy
+sudo apt install -y python-scipy
 cd python
 
 # install all that you need!
 nano requirements.txt
 
-sudo apt install python-gflags
-sudo apt install python-protobuf
+sudo apt install -y python-gflags
+sudo apt install -y python-protobuf
 
 #cannot import name fitpack
-sudo apt-get remove python-scipy
-sudo pip install scipy --upgrade   # use --upgrade flag!!! because apt-get install scipy get the old bersion
+sudo apt-get remove -y  python-scipy
+sudo pip install -y scipy --upgrade   # use --upgrade flag!!! because apt-get install scipy get the old bersion
 
-sudo pip install six --upgrade
-sudo pip install Pillow --upgrade
-sudo pip install pydot --upgrade
-sudo apt-get install cython --upgrade
+sudo pip install -y six --upgrade
+sudo pip install -y Pillow --upgrade
+sudo pip install -y pydot --upgrade
+sudo apt-get install -y cython --upgrade
 
-sudo apt-get install graphviz
+sudo apt-get install -y graphviz
 
 cd python
 # you can import caffe from this folder or add path
