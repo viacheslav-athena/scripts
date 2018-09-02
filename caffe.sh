@@ -1,4 +1,6 @@
-#!bash
+#!/bin/bash
+#sudo bash path/to/install.sh
+#chmod +x caffe.sh
 
 # http://caffe.berkeleyvision.org/install_apt.html
 sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
