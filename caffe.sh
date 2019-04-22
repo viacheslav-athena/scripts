@@ -43,12 +43,20 @@ sudo apt-get install -y cython --upgrade
 
 sudo apt-get install -y graphviz
 
-make runtest
+
 
 # https://github.com/yahoo/open_nsfw/issues/13
 sudo apt-get install -y python-matplotlib python-numpy python-pil python-scipy
 sudo apt-get install -y build-essential cython
 sudo apt-get install -y python-skimage
 
+printf " if you have errors by opencv CV_LOAD_IMAGE_COLOR define following
+        #define CV_LOAD_IMAGE_COLOR cv::IMREAD_COLOR
+        #define CV_LOAD_IMAGE_GRAYSCALE 0 
+        //IMREAD_GRAYSCALE = 0 "
+
+
+
+make runtest
 #make pycaffe
 #make pytest
