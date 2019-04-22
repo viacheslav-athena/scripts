@@ -45,5 +45,9 @@ sudo apt-get install -y graphviz
 
 make runtest
 
+sudo apt-get install -y python-matplotlib python-numpy python-pil python-scipy
+sudo apt-get install -y build-essential cython
+sudo apt-get install -y python-skimage
+
 #make pycaffe
 #make pytest
