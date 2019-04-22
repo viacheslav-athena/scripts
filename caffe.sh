@@ -45,6 +45,7 @@ sudo apt-get install -y graphviz
 
 make runtest
 
+# https://github.com/yahoo/open_nsfw/issues/13
 sudo apt-get install -y python-matplotlib python-numpy python-pil python-scipy
 sudo apt-get install -y build-essential cython
 sudo apt-get install -y python-skimage
