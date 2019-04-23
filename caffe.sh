@@ -64,10 +64,14 @@ printf " if you have errors by opencv CV_LOAD_IMAGE_COLOR define following
         
         2) for nvidia GTX1060 comment line
         -gencode arch=compute_20,code=sm_20 
+        
            for nvidia 940m
         -gencode arch=compute_20,code=sm_20
         -gencode arch=compute_20,code=sm_20   
-        3) if more opencv errors
+        
+        3) add CUSTOM_CXX := g++ -std=c++11 for OpenCV 4 support
+        
+        4) if more opencv errors
          USE_PKG_CONFIG := 1   "
 
 
