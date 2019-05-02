@@ -56,7 +56,7 @@ WITH_PYTHON_LAYER := 1
 ```
 2) install https://github.com/protocolbuffers/protobuf/releases/tag/v3.7.0
 ```
-./configure --prefix=/usr/local 
+./configure --prefix=/usr
 make
 sudo make install
 ```
