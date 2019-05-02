@@ -56,10 +56,13 @@ WITH_PYTHON_LAYER := 1
 ```
 2) install https://github.com/protocolbuffers/protobuf/releases/tag/v3.7.0
 ```
-./configure --prefix=/usr
-make
-sudo make install
+cd $PROTOBUF_BUILD_DIR/python
+python setup.py build
+python setup.py test
+python setup.py install
 ```
+from https://github.com/BVLC/caffe/issues/2092
+
 3) export PYTHONPATH of pythonLayer
 ```
 export PYTHONPATH=/home/user/pythonLayer/
