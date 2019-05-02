@@ -54,9 +54,14 @@ export PYTHONPATH=/home/user/caffe/python
 ```
 WITH_PYTHON_LAYER := 1 
 ```
-2) install https://github.com/protocolbuffers/protobuf/releases/tag/v3.7.0-rc.3
+2) install https://github.com/protocolbuffers/protobuf/releases/tag/v3.7.0
 ```
-cd $PROTOBUF_BUILD_DIR/python
+sudo pip uninstall protobuf
+./configure #--prefix=/usr
+make
+sudo make install
+
+cd python
 python setup.py build
 python setup.py test
 python setup.py install
