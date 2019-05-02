@@ -50,11 +50,12 @@ export PYTHONPATH=/home/user/caffe/python
 
 ### PythonLayer
 
-add in Makefile.config
+1) add in Makefile.config
 ```
 WITH_PYTHON_LAYER := 1 
 ```
-and install https://github.com/protocolbuffers/protobuf/releases/tag/v3.7.0
+2) install https://github.com/protocolbuffers/protobuf/releases/tag/v3.7.0
+3) export PYTHONPATH=/home/popikeyshen/pythonLayerFolder/
 
 ### Errors
 
