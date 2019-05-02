@@ -66,6 +66,11 @@ python setup.py build
 python setup.py test
 python setup.py install
 ```
+and test by
+```
+protoc --version
+```
+
 from https://github.com/BVLC/caffe/issues/2092
 
 3) export PYTHONPATH of pythonLayer
