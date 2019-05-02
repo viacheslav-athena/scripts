@@ -55,6 +55,11 @@ export PYTHONPATH=/home/user/caffe/python
 WITH_PYTHON_LAYER := 1 
 ```
 2) install https://github.com/protocolbuffers/protobuf/releases/tag/v3.7.0
+```
+./configure --prefix=/usr/local 
+make
+sudo make install
+```
 3) export PYTHONPATH of pythonLayer
 ```
 export PYTHONPATH=/home/user/pythonLayer/
