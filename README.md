@@ -48,6 +48,14 @@ export PYTHONPATH=/home/user/caffe/python
 
 ```
 
+### PythonLayer
+
+add in Makefile.config
+```
+WITH_PYTHON_LAYER := 1 
+```
+and install https://github.com/protocolbuffers/protobuf/releases/tag/v3.7.0
+
 ### Errors
 
 If you have errors - look comments in the install script. And dont forget to install the same versions of OpenCV and Contrib
