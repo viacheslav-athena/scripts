@@ -12,7 +12,7 @@ For some time, I installed libraries for my embedded systems manually from the c
 
    c) Eigen
 
-2. Caffe.sh
+2. Caffe auto install script - Caffe.sh
 
 ### Installing
 
